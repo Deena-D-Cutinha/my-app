@@ -1,21 +1,18 @@
 .App {
-  
-  background-color: #0A2A57;
-  
+  /* background-color: #0a2a57; */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
+
   /* font-size: calc(10px + 2vmin); */
 }
 
-
-
 .App-header {
   /* background-color: #282c34; */
-  
-    background-color: #0A2A57;
-  
+
+  background-color: #0a2a57;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,11 +26,128 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* input form */
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+  font-weight: normal;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  @include box-sizing(border-box);
+}
+
+input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#cards .card {
+  border-radius: 20px;
+  min-height: 100%;
+}
+
+#cards .heading-border {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+}
+
+#cards .card .user-picture img {
+  position: absolute;
+  top: -20%;
+  right: 12%;
+  background: #f8f9fa !important;
+  padding: 10px;
+}
+
+#cards .card .user-content .user-name {
+  margin-right: 150px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #1b1b25;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #503291;
+}
+
+.container {
+  /* display: flex; */
+  width: 100%;
+  /* max-width: 800px; */
+  /* margin: auto; */
+  margin-top: 180px;
+  /* background: darkblue; */
+  padding: 10px;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+/******
+  Form
+ ******/
+
+#register {
+  background: #fff;
+  position: relative;
+  width: 410px;
+  padding: 2px 15px 20px 15px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-in-out;
+}
+
+#register.close {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.8s ease-in-out;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.nav {
+  margin-bottom: 20px;
 }
