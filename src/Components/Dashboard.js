@@ -13,7 +13,11 @@ export default class Dashboard extends Component {
         )}
 
         {!(window.localStorage.userName || window.localStorage.inputMsg) && (
-          <h4> local Storage is not set</h4>
+          <h4>
+            {" "}
+            local Storage is not set. You can enter your details in home page.
+            or <a href="/home">click here to enter your details..</a>
+          </h4>
         )}
       </div>
     );
