@@ -6,7 +6,6 @@ export default class Home extends Component {
   constructor() {
     super();
     this.state = {
-      name: "",
       inputMsg: "",
       userName: "",
       nameFlag: true,
@@ -127,16 +126,7 @@ export default class Home extends Component {
               )}
             </div>
           </div>
-          <div className="reload">
-            <Button
-              variant="info"
-              onClick={(e) => {
-                this.loadMore();
-              }}
-            >
-              Reload..
-            </Button>{" "}
-          </div>
+
           <br />
         </body>
       </div>
