@@ -6,7 +6,8 @@ import Home from "./Components/Home";
 import Dashboard from "./Components/Dashboard";
 import Dynamic from "./Components/Dynamic";
 import Static from "./Components/Static";
-
+import Homef from "./Components/Homef";
+import ListOfThings from "./Components/ListOfThings";
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/static">
             <Static />
+          </Route>
+          <Route exact path="/homef">
+            <ListOfThings />
           </Route>
         </Switch>
       </Router>

@@ -11,6 +11,9 @@ export default class Header extends Component {
             <Nav.Link href="/home">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
+            <Nav.Link href="/homef">Home2</Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
             <Nav.Link href="/static">Static Data</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
