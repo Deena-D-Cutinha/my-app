@@ -25,10 +25,8 @@ export default function ListOfThings() {
   // });
   useEffect(async () => {
     const result = await axios(
-      "https://stldintapp01.sial.com/matrixendpoints/getOutages?startAt=0&maxResults=30&statusCode=2"
+     //dummy URL to be provided.
     );
-
-    console.log("fetch result --" + JSON.stringify(result));
     setData(result.data);
   }, []);
 
