@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 export default function ListOfThings() {
+  //way to create local variables
   const [items, setItems] = useState([]);
   const [itemName, setItemName] = useState("");
   const [data, setData] = useState([]);
+  //create cart of items
   const addItem = (event) => {
     event.preventDefault();
     setItems([
@@ -16,22 +18,17 @@ export default function ListOfThings() {
     setItemName("");
   };
 
-  // useEffect(() => {
-  //   fetch("/demo/data/").then((response) => response.json());
-
-  //   // .then((data) => setData(data));
-
-  //   console.log("data " + JSON.stringify(data));
-  // });
+//to be called when component loaded
   useEffect(async () => {
     const result = await axios(
-     //dummy URL to be provided.
+     // URL to be provided.
     );
     setData(result.data);
   }, []);
 
   return (
     <>
+    //create a form to add items
       <form onSubmit={addItem}>
         <label>
           {" "}
@@ -44,6 +41,7 @@ export default function ListOfThings() {
           />
         </label>
       </form>
+//loop the items to display 
       <ul>
         {items.map((item) => (
           <li key={item.id}>{item.name}</li>
